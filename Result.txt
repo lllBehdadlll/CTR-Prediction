@@ -1,0 +1,16 @@
+
+XGBoost_t : 
+accuracy_score : 0.8427623405351353
+precision_score : 0.5510204081632653
+
+XGBoost_t1 : droping 'device_id', 'C14', 'C17', 'C19', 'C20', 'C21'
+accuracy_score : 0.8434592891124512
+precision_score : 0.5381791483113069
+
+XGBoost_t2 : tree_method = 'gpu_hist'|j=30 
+accuracy_score : 0.8419744856216478
+precision_score : 0.5669125902165196
+
+XGBoost_t3 : tree_method = 'gpu_hist',n_jobs=-1, n_estimators=35,max_depth=3 |j=30 
+accuracy_score : 0.8435198933365655
+precision_score : 0.6163215590742996
