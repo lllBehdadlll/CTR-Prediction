@@ -28,11 +28,10 @@ x[non_numeric_columns] = x[non_numeric_columns].apply(le.fit_transform)
 #**Model Training**
 
 from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(x, y, test_size=0.33)
 
 from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score, precision_score
-xgb = XGBClassifier()
+
 j = 0
 accuracy = []
 precision = []
